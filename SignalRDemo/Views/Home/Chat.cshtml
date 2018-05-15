@@ -1,0 +1,17 @@
+﻿@page
+
+
+<h2>Chat</h2>
+
+<form id="send-form" action="#">
+    Send a message:
+    <input type="text" id="message-textbox" disabled />
+    <button id="send-button" type="submit" disabled>Send</button>
+</form>
+
+<ul id="messages-list"></ul>
+
+@section Scripts {
+    <script src="~/lib/signalr/signalr.min.js" type="text/javascript"></script>
+    <script src="~/js/chat.js" type="text/javascript"></script>
+}
